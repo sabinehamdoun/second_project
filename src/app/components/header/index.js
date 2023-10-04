@@ -1,7 +1,12 @@
+"use client"
 import React from 'react'
 import '@component/app/page.module.css'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const Header = () => {
+  const router = useRouter()
+
   return (
     <nav>
       <div className="menu">
@@ -11,9 +16,9 @@ const Header = () => {
         </div>
         <div className="navlist">
           <ul id="list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#text">About</a></li>
-            <li><a href="#form">Contact</a></li>
+            <li><Link href="/pages/home">Home</Link></li>
+            <li><Link href="/pages/about">About</Link></li>
+            <li><Link href="/pages/contact">Contact</Link></li>
           </ul>
         </div>
         </div>

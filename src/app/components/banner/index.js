@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Banner = () => {
+const Banner = ({title, subtitle, backImage}) => {
   return (
-    <div className="banner" id="home">
+    <div className="banner" id="home" style={{backgroundImage: `url(${backImage})`}}>
       <div className="overlay">
-        <h1>Welcome to Our Website</h1>
-        <p>Discover our amazing services and products.</p>
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
       </div>
     </div>
   )
