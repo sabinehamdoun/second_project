@@ -2,11 +2,9 @@
 import React from 'react'
 import '@component/app/page.module.css'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 
 const Header = () => {
-  const router = useRouter()
-
+  
   return (
     <nav>
       <div className="menu">
