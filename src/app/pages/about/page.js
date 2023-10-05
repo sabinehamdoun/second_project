@@ -1,5 +1,7 @@
 import Banner from "@component/app/components/banner";
 import Card from "@component/app/components/card";
+import Footer from "@component/app/components/footer";
+import Header from "@component/app/components/header";
 import React from "react";
 
 const About = () => {
@@ -38,6 +40,7 @@ const About = () => {
 
   return (
     <div>
+      <Header />
       <Banner
         title={"About Us"}
         subtitle={"Get to Know Us More!"}
@@ -54,6 +57,8 @@ const About = () => {
           />
         ))}
       </div>
+
+      <Footer />
     </div>
   );
 };
